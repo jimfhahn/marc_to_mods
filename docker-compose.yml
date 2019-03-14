@@ -1,0 +1,9 @@
+version: '3.7'
+  
+services:
+  prompt:
+    image: ubuntu:16.04
+    command: tail -F anything
+    volumes:
+      - '/var/hold:/root'
+      - '/root/convert_xml/scripts:/usr/local/sbin'
